@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple App Sharing Platform</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Simple App Sharing Platform</h1>
+
+  <h2>Upload App</h2>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="appName">App Name:</label>
+    <input type="text" id="appName" name="appName" required><br><br>
+
+    <label for="appFile">App File:</label>
+    <input type="file" id="appFile" name="appFile" required><br><br>
+
+    <button type="submit">Upload</button>
+  </form>
+
+  <h2>Available Apps</h2>
+  <div id="apps-container">
+    <!-- Apps will be displayed here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
